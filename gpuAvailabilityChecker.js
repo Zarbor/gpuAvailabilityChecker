@@ -124,5 +124,5 @@ async function fetchGpuAvailability() {
 
 // Schedule the task to run every minute
 // fetchGpuAvailability()
-cron.schedule("* * * * *", fetchGpuAvailability);
+cron.schedule("*/31 * * * * *", fetchGpuAvailability);
 console.log("GPU availability checker is running...");
